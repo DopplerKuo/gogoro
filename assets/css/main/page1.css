@@ -78,6 +78,7 @@
 @media screen and (max-width: 992px) {
   .page1 {
     height: 100%;
+    background-attachment: scroll;
   }
   .page1 .content {
     top: 80%;

@@ -37,3 +37,10 @@
 .page5 .calltoaction {
   margin: 50px auto;
 }
+
+@media screen and (max-width: 992px) {
+  .page5 {
+    height: 100%;
+    background-attachment: scroll;
+  }
+}
