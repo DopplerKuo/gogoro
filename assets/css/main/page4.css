@@ -1,0 +1,52 @@
+.page4 {
+  position: relative;
+  width: 100%;
+  padding: 5% 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.page4 .content {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 870px;
+}
+
+.page4 h3, .page4 h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+.page4 h2 {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.p4-video {
+  position: relative;
+  width: 100%;
+}
+
+.p4-video>img {
+  width: 100%;
+}
+
+.p4-video-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 65px;
+  line-height: 65px;
+  width: 210px;
+  border-radius: 50px;
+  background-color: #333238;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}

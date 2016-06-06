@@ -1,0 +1,72 @@
+.page2 {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+}
+.page2 a {
+  color: #fff;
+  text-decoration: none;
+}
+.p2-all {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  margin: 0;
+  height: 150px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,1);
+  border-bottom: 6px solid;
+  overflow: hidden;
+}
+.p2-all span {
+  font-size: 15px;
+}
+.p2-all h3 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+/* Guildline Color #0069d2, #00c3e5, #24b84c, #c0df16*/
+.p2-episode-bg,.p2-episode-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.p2-episode-text {
+  top: 50px;
+}
+.p2-episode-bg {
+  opacity: .95;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  transform: scale(1.2,1.2);
+}
+.p2-episode01 { border-color: #0069d2; }
+.p2-episode02 { border-color: #00c3e5; }
+.p2-episode03 { border-color: #24b84c; }
+.p2-episode04 { border-color: #c0df16; }
+.p2-episode01 .p2-episode-bg { background-image: url("../../img/main/page2-1.png"); }
+.p2-episode02 .p2-episode-bg { background-image: url("../../img/main/page2-2.png"); }
+.p2-episode03 .p2-episode-bg { background-image: url("../../img/main/page2-3.png"); }
+.p2-episode04 .p2-episode-bg { background-image: url("../../img/main/page2-4.png"); }
+
+@media screen and (max-width: 992px) {
+  .p2-all {
+    width: 100%;
+  }
+  .p2-all span {
+    font-size: 15px;
+  }
+  .p2-all h3 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .p2-episode01 {
+    display: none;
+  }
+}

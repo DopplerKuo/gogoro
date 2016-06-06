@@ -1,0 +1,220 @@
+/* Guildline Color #0069d2, #00c3e5, #24b84c, #c0df16*/
+
+body, html {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+body.episode01 .page4 { background-color: #0069d2; }
+body.episode02 .page4 { background-color: #00c3e5; }
+body.episode03 .page4 { background-color: #24b84c; }
+body.episode04 .page4 { background-color: #c0df16; }
+
+*:not(.fa) {
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0;
+}
+h3 {
+  font-size: 20px;
+  margin: 0;
+}
+/*因為首張照片偏黑，light 版的 header 一開始字會看不到，在不更改原 layout.js 的情況下強制背景白色*/
+header {
+  background-color: #fff!important;
+  color: #000;
+}
+
+/* ----- youtuber-box ----- */
+.youtube-box {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 3001; /*header z-index: 3000;*/
+}
+.youtube-box .img-bg-black {
+  background-color: rgba(0,0,0,.8); /*點擊可以關掉*/
+  cursor: pointer;
+}
+.youtube-box .img-bg-black img/*XX按鈕*/ {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  top: 30px;
+}
+.youtube-box-main {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 95%;
+  max-width: 950px;
+  margin: auto;
+}
+.youtube-box-main-169 {
+  padding-bottom: 53%; /*撐出16:9*/
+}
+.youtube-box-main iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* ----- youtuber-box END ----- */
+.page-video-play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 180px;
+  height: 180px;
+  border: 2px solid #fff;
+  border-radius: 90px;
+  cursor: pointer;
+}
+.page-video-play:hover div:last-child {
+  opacity: 1;
+  right: 0;
+} 
+.page-video-play:hover div:first-child {
+  opacity: 0;
+  left: -112px;
+} 
+
+.page-video-play div{
+  position: absolute;
+  width: 112px;
+  height: 48px;
+  opacity: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding-top: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 20px;
+  font-family: graphik-black-italic,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  transition: .5s;
+}
+.page-video-play div:last-child {
+  height: 68px;
+  right: -112px;
+  padding-top: 0px;
+  opacity: 0;
+}
+/* ----- youtuber page-video-play END ----- */
+
+.comingsoon .p2-episode-bg {
+  -webkit-filter: grayscale(100%) blur(2px);
+  filter: grayscale(100%) blur(2px);
+}
+
+
+/*預約試乘*/
+.calltoaction {
+  width: 140px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  transition: .3s;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  border-radius: 30px;
+}
+.calltoaction:hover {
+  color: rgba(0,0,0,.75);
+  background-color: #fff;
+}
+/* --------- 預約試乘 END ---------  */
+
+/* footer */
+#ggr_directory {
+  text-align: left;
+}
+
+/* slider */
+.unslider{
+  position: relative;
+}
+
+.unslider{
+  position: relative;
+}
+.unslider-arrow {
+  display: block;
+  width: 15vw;
+  max-width: 100px; 
+  height: 100%;
+  top: 0;
+  right: -50px;
+  left: auto;
+  overflow: hidden;
+  font-size: 0;
+  opacity: .6;
+  transition: .2s;
+  cursor: pointer;
+}
+.unslider-arrow:hover {
+  opacity: 1;
+}
+.unslider-arrow.next,.unslider-arrow.prev {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url('../../img/main/icon-arrow-right.svg');
+}
+.unslider-arrow.prev {
+  transform: rotate3d(0,1,0,180deg);
+}
+.unslider-nav {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  top: auto;
+  margin: 0;
+  z-index: 2999; /*header z-index 3000*/
+ }
+/* --------- slider END ---------  */
+
+.img-bg-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.3);
+}
+
+@media screen and (max-width: 992px) {
+  .calltoaction {
+    color: rgba(0,0,0,.75);
+    background-color: #fff;
+  }
+  .page-video-play {
+    width: 140px;
+    height: 140px;
+  }
+  .page4 .page-video-play {
+    width: 120px;
+    height: 120px;
+  }
+}
