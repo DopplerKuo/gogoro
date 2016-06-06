@@ -10,6 +10,9 @@
   right: 0;
   left: 0;
   bottom: 60px;
+  width: 150px;
+  line-height: 55px;
+  height: 55px;
   margin: auto;
 }
 
@@ -25,7 +28,7 @@
 .p3-slider h3 {
   position: absolute;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 2px;
   line-height: 1.8;
   bottom: 130px;
@@ -33,6 +36,9 @@
   right: 0;
   margin: auto;
   text-align: center;
+}
+.p3-slider h3 br {
+  display: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -53,6 +59,9 @@
     width: 90%;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.65);
+  }
+  .p3-slider h3 br {
+    display: block;
   }
   .unslider-nav {
     bottom: 200px;

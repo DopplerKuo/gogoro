@@ -12,6 +12,22 @@ body.episode01 .page4 { background-color: #0069d2; }
 body.episode02 .page4 { background-color: #00c3e5; }
 body.episode03 .page4 { background-color: #24b84c; }
 body.episode04 .page4 { background-color: #c0df16; }
+body.episode01 .page5 .calltoaction { 
+  box-shadow: none;
+  background-color: #0069d2; 
+}
+body.episode02 .page5 .calltoaction { 
+  box-shadow: none;
+  background-color: #00c3e5; 
+}
+body.episode03 .page5 .calltoaction { 
+  box-shadow: none;
+  background-color: #24b84c; 
+}
+body.episode04 .page5 .calltoaction { 
+  box-shadow: none;
+  background-color: #c0df16; 
+}
 
 *:not(.fa) {
   -webkit-font-smoothing: antialiased;
@@ -70,6 +86,28 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.youtube-box-fbshare {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10vh;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: .3s;
+}
+.youtube-box-fbshare:hover {
+  background-color: #fff;
+  color: rgba(0,0,0,75);
 }
 /* ----- youtuber-box END ----- */
 .page-video-play {
@@ -138,8 +176,9 @@ header {
   font-weight: 600;
   letter-spacing: 3px;
   border-radius: 30px;
+  cursor: pointer;
 }
-.calltoaction:hover {
+.page3 .calltoaction:hover {
   color: rgba(0,0,0,.75);
   background-color: #fff;
 }

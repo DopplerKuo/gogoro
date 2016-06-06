@@ -81,28 +81,28 @@
     background-attachment: scroll;
   }
   .page1 .content {
-    top: 80%;
-    transform: translateY(-80%);
+    top: 50vh;
   }
   .p1-title {
     width: 100%;
     top: 100%;
-    transform: translateY(-150px);
+    margin-top: -150px;
   }
   .page1 p {
     width: 100%;
     text-align: center;
     top: 100%;
-    transform: translateY(-95px);
-    font-size: 15px;
-    font-weight: 500;
+    margin-top: -85px;
+    font-size: 17px;
+    font-weight: 600;
     line-height: 1.7;
   }
   .p1-title h2 {
     display: inline;
     text-align: center;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 24px;
+    opacity: 1!important; /*防止reveal效果*/
   }
   .p1-title h2:nth-child(1) {
     padding-left: 0;
@@ -110,6 +110,9 @@
   .p1-facebook {
     position: absolute;
     top: 60px;
+    width: 45px;
+    height: 45px;
+    line-height: 48px;
     right: 5%;
     bottom: auto;
   }

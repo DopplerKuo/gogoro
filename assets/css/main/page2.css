@@ -19,12 +19,14 @@
   overflow: hidden;
 }
 .p2-all span {
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .p2-all h3 {
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 7px;
 }
 /* Guildline Color #0069d2, #00c3e5, #24b84c, #c0df16*/
 .p2-episode-bg,.p2-episode-text {
@@ -38,7 +40,7 @@
   top: 50px;
 }
 .p2-episode-bg {
-  opacity: .95;
+  opacity: .75;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -65,8 +67,5 @@
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 1px;
-  }
-  .p2-episode01 {
-    display: none;
   }
 }

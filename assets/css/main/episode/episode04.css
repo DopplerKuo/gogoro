@@ -5,3 +5,11 @@
 .p3-slider2 { background-image: url("../../../img/main/episode04/page3-slider2.png"); }
 .p3-slider3 { background-image: url("../../../img/main/episode04/page3-slider3.png"); }
 .page5 { background-image: url("../../../img/main/episode01/page5-bg.png"); }
+.page4 h2, .page4 h3{ color: rgba(0,0,0,.65); }
+
+
+@media screen and (max-width: 992px) {
+  .p2-episode04 {
+    display: none;
+  }
+}

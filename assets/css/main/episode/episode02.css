@@ -5,3 +5,9 @@
 .p3-slider2 { background-image: url("../../../img/main/episode02/page3-slider2.png"); }
 .p3-slider3 { background-image: url("../../../img/main/episode02/page3-slider3.png"); }
 .page5 { background-image: url("../../../img/main/episode01/page5-bg.png"); }
+
+@media screen and (max-width: 992px) {
+  .p2-episode02 {
+    display: none;
+  }
+}

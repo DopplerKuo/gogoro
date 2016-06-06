@@ -16,13 +16,14 @@
 .page4 h3, .page4 h2 {
   font-size: 20px;
   letter-spacing: 2px;
-  margin: 20px 0;
-  font-weight: 400;
+  margin: 30px 0;
+  font-weight: 600;
 }
 
 .page4 h2 {
   font-size: 50px;
   letter-spacing: 5px;
+  margin-top: 35px;
 }
 
 .p4-video {
@@ -49,4 +50,40 @@
   font-size: 22px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.p4-more {
+  display: block;
+  width: 150px;
+  height: 55px;
+  margin: 40px auto 0;
+  line-height: 55px;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  transition: .3s;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+.p4-more:hover {
+  background-color: #fff;
+  color: rgba(0,0,0,.75);
+}
+@media screen and (max-width: 992px) {
+  .page4 h2 {
+    font-size: 26px;
+  }
+  .page4 h3 {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  .p4-more {
+    background-color: #fff;
+    color: rgba(0,0,0,.75);
+    margin-bottom: 50px;
+  }
 }
