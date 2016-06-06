@@ -121,8 +121,8 @@ header {
 /* ----- youtuber page-video-play END ----- */
 
 .comingsoon .p2-episode-bg {
-  -webkit-filter: grayscale(100%) blur(2px);
-  filter: grayscale(100%) blur(2px);
+  -webkit-filter: blur(2px) grayscale(100%);
+  filter: blur(2px) grayscale(100%);
 }
 
 
