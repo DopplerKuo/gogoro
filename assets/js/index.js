@@ -1,8 +1,8 @@
-$(document).ready(function() {        
-	
+$(document).ready(function() {
+
 	// page3 的 slider
 	$('.slider').unslider({
-		speed: 400,              
+		speed: 400,
 		delay: 3000,
 	});
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
 	// youtube-box
 	$("body").css("overflow-y", "hidden"); //一開始有影片
 	$('.page-video-play').click(function() {
-		$('.youtube-box').fadeIn(300); 
+		$('.youtube-box').fadeIn(300);
 		$('iframe').fadeIn(0); //兩個影片是疊在一起的，主影片在上面
 		$("body").css("overflow-y", "hidden");
 		if ($(this).hasClass('bot-v')) {
@@ -39,5 +39,9 @@ $(document).ready(function() {
 	$('a.comingsoon').click(function(e) {
 		e.preventDefault();
 	});
+	function fbs_click() {
+    u=location.href;t=document.title;window.open(
+    'http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),
+    'sharer','toolbar=0,status=0,width=626,height=436');return false;
+  }
 });
-
